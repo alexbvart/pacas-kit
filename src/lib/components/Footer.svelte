@@ -1,3 +1,7 @@
+<script>
+  import { base } from '$app/paths';
+</script>
+
 <footer class="bg-white pt-24 pb-12 px-8 border-t border-slate-100">
     <div class="max-w-[1200px] mx-auto">
         
@@ -19,11 +23,11 @@
             <div>
                 <h4 class="text-[11px] font-bold text-slate-900 uppercase tracking-[0.2em] mb-8">Gestión de Reserva</h4>
                 <ul class="space-y-4 text-[13px] font-light text-slate-500">
-                    <li><a href="#" class="hover:text-orange-600 transition-colors">Términos y Condiciones</a></li>
-                    <li><a href="#" class="hover:text-orange-600 transition-colors">Políticas de Cancelación</a></li>
-                    <li><a href="#" class="hover:text-orange-600 transition-colors">Protección de Datos Personales</a></li>
+                    <li><a href="/" class="hover:text-orange-600 transition-colors">Términos y Condiciones</a></li>
+                    <li><a href="/" class="hover:text-orange-600 transition-colors">Políticas de Cancelación</a></li>
+                    <li><a href="/" class="hover:text-orange-600 transition-colors">Protección de Datos Personales</a></li>
                     <li class="pt-2">
-                        <a href="#" class="flex items-center gap-3 group">
+                        <a href="/" class="flex items-center gap-3 group">
                             <i class="fas fa-book text-slate-300 group-hover:text-orange-600"></i>
                             <span class="font-bold text-slate-900 group-hover:underline">Libro de Reclamaciones</span>
                         </a>
@@ -69,9 +73,15 @@
             </p>
             
             <div class="flex gap-8 text-slate-400">
-                <a href="#" class="hover:text-orange-600 transition-colors"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="hover:text-orange-600 transition-colors"><i class="fab fa-instagram text-lg"></i></a>
-                <a href="#" class="hover:text-orange-600 transition-colors"><i class="fab fa-tiktok"></i></a>
+                <a href="{base}/" aria-label="Facebook" class="hover:text-orange-600 transition-colors">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="{base}/" aria-label="Instagram" class="hover:text-orange-600 transition-colors">
+                    <i class="fab fa-instagram text-lg"></i>
+                </a>
+                <a href="{base}/" aria-label="TikTok" class="hover:text-orange-600 transition-colors">
+                    <i class="fab fa-tiktok"></i>
+                </a>
             </div>
 
             <div class="flex items-center gap-2 px-3 py-1 bg-slate-50 rounded text-slate-400">

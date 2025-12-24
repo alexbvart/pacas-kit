@@ -25,6 +25,14 @@
       activeColor: 'bg-[#3DD5DC]',
       activeText: 'text-slate-900', // Color cuando está seleccionado
       icon: 'fa-qrcode'
+    },
+    {
+      id: 'lemon',
+      name: 'Lemon Cash',
+      desc: 'Escaneo inmediato sin comisiones',
+      activeColor: 'bg-[rgb(0, 240, 104)]',
+      activeText: 'text-slate-900', // Color cuando está seleccionado
+      icon: 'fa-qrcode'
     }
   ];
 </script>

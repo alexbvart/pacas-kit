@@ -10,7 +10,6 @@
     import Testimonials from '$lib/components/Testimonials.svelte';
     import Payment from '$lib/components/Payment.svelte';
     import TrustTicker from '$lib/components/TrustTicker.svelte';
-    import Payment2 from '$lib/components/Payment2.svelte';
 </script>
 
 <TopBar />

@@ -23,7 +23,7 @@
         </p>
         <div class="flex flex-col md:flex-row justify-center gap-6">
             <a
-                href="#oferta"
+                href="#pago"
                 class="bg-orange-600 hover:bg-orange-700 text-white px-10 py-4 rounded-full font-bold text-lg shadow-2xl transition-all transform hover:scale-105"
                 >Reclamar 10% de Descuento</a
             >

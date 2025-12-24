@@ -8,8 +8,8 @@
                 </p>
                 <div class="flex gap-6">
                     <div class="text-center">
-                        <p class="text-3xl font-bold text-slate-900">10k+</p>
-                        <p class="text-sm text-slate-500">Turistas Felices</p>
+                        <p class="text-3xl font-bold text-slate-900">5k+ </p>
+                        <p class="text-sm text-slate-500">Aventureros anuales</p>
                     </div>
                     <div class="text-center border-l border-slate-200 pl-6">
                         <p class="text-3xl font-bold text-slate-900">100%</p>
