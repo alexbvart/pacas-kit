@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { base } from '$app/paths';
   import { onMount } from 'svelte';
   let nombre = "", documento = "", domicilio = "", email = "", celular = "";
   let servicio = "", detalle = "", monto = "";
@@ -18,7 +19,7 @@
 
 
 <nav class="py-6 px-8 max-w-5xl mx-auto text-[10px] uppercase tracking-widest text-slate-400 font-bold">
-  <a href="/" class="hover:text-orange-600 transition-colors">Inicio</a> 
+  <a href="{base}/" class="hover:text-orange-600 transition-colors">Inicio</a> 
   <span class="mx-2">/</span> 
   <span class="text-slate-900 font-black">Libro de Reclamaciones</span>
 </nav>

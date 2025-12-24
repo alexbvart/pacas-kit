@@ -24,7 +24,7 @@
                 <ul class="space-y-4 text-[13px] font-light text-slate-500">
                     <li><a href="{base}/terminos" class="hover:text-orange-600 transition-colors">Términos y Condiciones</a></li>
                     <!-- <li><a href="{base}/" class="hover:text-orange-600 transition-colors">Políticas de Cancelación</a></li> -->
-                    <!-- <li><a href="/" class="hover:text-orange-600 transition-colors">Protección de Datos Personales</a></li> -->
+                    <!-- <li><a href="{base}/" class="hover:text-orange-600 transition-colors">Protección de Datos Personales</a></li> -->
                     <li class="flex items-center gap-2 text-slate-900 font-medium italic">
                         <i class="fas fa-check-circle text-green-500"></i>
                         Emitimos Boleta Electrónica

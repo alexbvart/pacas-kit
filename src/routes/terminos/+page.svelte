@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { base } from '$app/paths';
     import Footer from '$lib/components/Footer.svelte';
     import TopBar from '$lib/components/TopBar.svelte';
   import { slide } from 'svelte/transition';
@@ -63,7 +64,7 @@
 
 <div class="min-h-screen bg-slate-50 font-sans selection:bg-orange-100">
   <nav class="py-6 px-8 max-w-5xl mx-auto text-[10px] uppercase tracking-widest text-slate-400 font-bold">
-    <a href="/" class="hover:text-orange-600 transition-colors">Inicio</a> 
+    <a href="{base}/" class="hover:text-orange-600 transition-colors">Inicio</a> 
     <span class="mx-2">/</span> 
     <span class="text-slate-900 font-black">Términos y Condiciones</span>
   </nav>

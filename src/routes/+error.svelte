@@ -1,6 +1,7 @@
 <script>
     import TopBar from '$lib/components/TopBar.svelte';
     import Footer from '$lib/components/Footer.svelte';
+    import { base } from '$app/paths';
 </script>
 
 <svelte:head>
@@ -44,10 +45,10 @@
 </div>
 
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/" class="px-8 py-4 bg-orange-600 text-white text-base font-bold uppercase tracking-widest rounded-sm shadow-lg hover:bg-orange-700 transition-colors transform hover:-translate-y-1">
+            <a href="{base}/" class="px-8 py-4 bg-orange-600 text-white text-base font-bold uppercase tracking-widest rounded-sm shadow-lg hover:bg-orange-700 transition-colors transform hover:-translate-y-1">
                 <i class="fas fa-arrow-left mr-3"></i> Volver al Inicio
             </a>
-            <a href="/#pago" class="px-8 py-4 bg-slate-200 text-slate-900 text-base font-bold uppercase tracking-widest rounded-sm shadow-md hover:bg-slate-300 transition-colors transform hover:-translate-y-1">
+            <a href="{base}/#pago" class="px-8 py-4 bg-slate-200 text-slate-900 text-base font-bold uppercase tracking-widest rounded-sm shadow-md hover:bg-slate-300 transition-colors transform hover:-translate-y-1">
                 <i class="fas fa-ticket-alt mr-3"></i> Reserva tu Aventura Ahora
             </a>
         </div>
