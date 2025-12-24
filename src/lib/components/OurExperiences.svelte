@@ -1,78 +1,97 @@
 <script>
   const experiences = [
     {
-      title: "Adrenalina en Dunas",
-      desc: "Siente el poder de las cuatrimotos cruzando el desierto de Cañoncillo.",
+      title: "Ruta de Adrenalina",
+      desc: "Domina las dunas más altas en cuatrimotos de última generación. Una dosis de libertad pura.",
       img: "https://i.pinimg.com/736x/56/84/ac/5684acac55521a4e4f1dbefa2eb05144.jpg",
-      tag: "Retorno Turbo",
-      color: "text-orange-600"
+      tag: "Más Popular",
+      color: "bg-orange-600",
+      price: "60"
     },
     {
       title: "Paz en la Laguna",
-      desc: "Remo suave en el espejo de agua de la Laguna Larga al amanecer.",
+      desc: "Navega en kayak por el espejo de agua al amanecer. El santuario de aves en su máximo esplendor.",
       img: "https://i.pinimg.com/736x/17/9f/f8/179ff8eb9d49fb48538c0f36a15ea7e5.jpg",
-      tag: "Santuario de Aves",
-      color: "text-blue-600"
+      tag: "Reconexión",
+      color: "bg-blue-600",
+      price: "45"
     },
     {
-      title: "Legado Norteño",
-      desc: "Cabalgata por dunas con caballos de paso entre algarrobos.",
+      title: "Paseo de Leyenda",
+      desc: "Cabalgata mística entre algarrobos centenarios. Siente el paso del caballo peruano en la arena.",
       img: "https://i.pinimg.com/736x/05/e7/1d/05e71d16f20566b0c17dddeeac6c70fc.jpg",
-      tag: "Bosque de Cañoncillo",
-      color: "text-emerald-700"
+      tag: "Cultura Viva",
+      color: "bg-emerald-700",
+      price: "50"
     }
   ];
 </script>
 
-<section id="experiencias" class="py-32 bg-slate-100">
+<section id="experiencias" class="pt-32 pb-16 bg-white">
   <div class="max-w-[1200px] mx-auto px-8">
     
-    <header class="mb-20 max-w-2xl text-center mx-auto">
-                  <h2 class="text-3xl font-black uppercase italic tracking-tighter">Nuestras Experiencias</h2>
-                <div class="h-1 w-20 bg-orange-500 mx-auto mt-4"></div>
+    <header class="mb-24 text-center">
+        <span class="text-orange-600 font-black text-[10px] uppercase tracking-[0.4em] mb-4 block">Experiencias de Autor</span>
+        <h2 class="text-4xl md:text-5xl font-black uppercase italic tracking-tighter text-slate-900">
+            Elige tu propia <span class="text-orange-500">Aventura</span>
+        </h2>
+        <p class="text-slate-400 text-xs mt-6 font-bold uppercase tracking-widest flex items-center justify-center gap-3">
+            <i class="fas fa-clock text-orange-500 animate-pulse"></i> Solo 4 cupos disponibles esta semana
+        </p>
     </header>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-x-10 gap-y-16">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-20">
       {#each experiences as item}
-        <article class="group relative flex flex-col">
-          <div class="relative aspect-[3/4] overflow-hidden bg-slate-50 mb-8 transition-all duration-500 group-hover:shadow-sm rounded-2xl">
+        <article class="group relative flex flex-col cursor-pointer">
+          <div class="relative aspect-[4/5] overflow-hidden bg-slate-100 mb-8 rounded-sm">
             <img 
               src={item.img} 
               alt={item.title}
-              class=" rounded-2xl w-full h-full object-cover saturate-[0.8] brightness-[0.95] group-hover:rounded-2xl group-hover:saturate-100 group-hover:scale-[1.03] transition-all duration-1000 ease-in-out"
+              class="w-full h-full object-cover transition-all duration-1000 ease-in-out group-hover:scale-110 group-hover:rotate-1 brightness-[0.9]"
             />
+            
+            <span class="absolute top-4 left-4 {item.color} text-white text-[9px] font-black uppercase tracking-[0.2em] px-3 py-1 shadow-xl">
+                {item.tag}
+            </span>
+
+            <div class="absolute bottom-0 right-0 bg-slate-900 text-white px-6 py-4">
+                <p class="text-[8px] uppercase tracking-widest opacity-60 leading-none">Desde</p>
+                <p class="text-xl font-bold italic leading-none">S/ {item.price}</p>
+            </div>
           </div>
           
           <div class="flex flex-col flex-grow">
-            <span class="text-[9px] font-black uppercase tracking-[0.2em] {item.color} mb-3">
-              {item.tag}
-            </span>
-            
-            <h3 class="text-2xl font-normal text-slate-900 mb-3 tracking-tight group-hover:text-orange-600 transition-colors duration-300">
+            <h3 class="text-2xl font-bold text-slate-900 mb-4 tracking-tight group-hover:text-orange-600 transition-colors">
               {item.title}
             </h3>
             
-            <p class="text-[15px] text-slate-500 font-light leading-relaxed max-w-[90%]">
+            <p class="text-[15px] text-slate-500 font-light leading-relaxed mb-6">
               {item.desc}
             </p>
 
-            <div class="mt-6 pt-6 border-t border-slate-100 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-              <span class="text-xs font-bold uppercase tracking-tighter text-slate-900 flex items-center gap-2">
-                Explorar detalles <i class="fas fa-arrow-right text-[10px]"></i>
+            <div class="mt-auto flex items-center justify-between group/btn">
+              <span class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-900 border-b-2 border-orange-500/20 group-hover:border-orange-500 transition-all pb-1">
+                Ver itinerario
               </span>
+              <i class="fas fa-plus text-[10px] p-2 bg-slate-100 rounded-full group-hover:bg-orange-600 group-hover:text-white transition-all"></i>
             </div>
           </div>
         </article>
       {/each}
     </div>
+
+    <footer class="mt-2 py-8 border-t border-slate-100 flex flex-col md:flex-row items-center justify-between gap-6 opacity-60">
+        <p class="text-[10px] font-bold uppercase tracking-widest text-slate-400">
+            <i class="fas fa-check-double text-green-500 mr-2"></i> Incluye Equipamiento y Guía Certificado
+        </p>
+        <div class="flex gap-6">
+            <img src="https://img1.wsimg.com/isteam/ip/52243972-a564-4158-ac40-3b2264e2ff4a/agencia%20de%20viajes%20y%20turismo%20registrada.jpg" alt="MINCETUR" class="h-8 grayscale opacity-50">
+        </div>
+    </footer>
   </div>
 </section>
 
 <style>
-  /* Importación de fuente para el toque Serif tipo Google Arts */
   @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
-  
-  .font-serif {
-    font-family: 'Playfair Display', serif;
-  }
+  .font-serif { font-family: 'Playfair Display', serif; }
 </style>
